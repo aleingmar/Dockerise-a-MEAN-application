@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY app.js .
 
 # Instalar express
-RUN npm init -y && npm install express
+RUN npm init -y && npm install express mongoose cors
 
 # Exponer el puerto 3000
 EXPOSE 3000
